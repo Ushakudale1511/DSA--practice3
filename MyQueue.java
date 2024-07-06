@@ -11,7 +11,7 @@ public class  MyQueue {
         newArr[elements.length]=element;
         elements=newArr;
     }
-    //出队
+    
     public int poll(){
         if(isEmpty()){
             throw  new RuntimeException("Queue is empty");
