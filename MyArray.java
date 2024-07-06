@@ -10,7 +10,7 @@ public class MyArray{
     public int size(){
         return elements.length;
     }
-    //往数组末尾增加一个元素
+  
     public void add(int element){
         int [] newArr = new int[elements.length+1];
         for(int i=0;i<elements.length;i++){
@@ -19,13 +19,12 @@ public class MyArray{
         newArr[elements.length]=element;
         elements=newArr;
     }
-    //打印所有元素到控制台；
+
     public void show(){
         System.out.println(Arrays.toString(elements));
     }
-    //删除一个数组中的一个元素
     public void delete(int index){
-        //判断下标越界
+       
         if(index<0||index>elements.length-1){
             throw new RuntimeException("下标越界");
         }
@@ -90,7 +89,7 @@ public class MyArray{
         int index = -1;
         while(true){
             //check element of mid is whether what you search for or not
-            //最小二分法分到最后两个数相等或者起始大于结束说明没有这个target！非常重要这一点！
+        
             if(begin>=end){
                 index = -1;
                 return index;
