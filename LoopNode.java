@@ -11,7 +11,7 @@ public class LoopNode {
         return this.data;
     }
 
-    //插入一个节点作为当前节点的下一个节点
+    
     public void after(LoopNode node){
         LoopNode nextNext = next;
         this.next = node;
@@ -19,7 +19,7 @@ public class LoopNode {
     }
 
     public void removeNext(){
-        //取出下下节点
+        
         LoopNode newNext = next.next;
         this.next=newNext;
     }
